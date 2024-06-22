@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATS</title>
+
+    <!--Fonts.googleapis-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <!--Axios-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!--Tailwindcss-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    dancing: ["'Dancing Script'"],
+                },
+                extend: {
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="bg-indigo-700 text-center p-8 m-2 flex justify-center text-2xl">
+
+    <article>
+        <h1 class="text-white">GALERIA DE GATOS</h1>
+        <button id="btn" class="font-dancing bg-indigo-900 text-white m-2.5 p-2.5
+        rounded-md hover:text-black hover:bg-white">
+        Siguientes Gatos
+        </button>
+        <section id="contenedor" class="grid grid-cols-4"></section>
+    </article>
+
+    <script src="cats.js"></script>
+</body>
+
+</html>

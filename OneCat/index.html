@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Img Cat</title>
+
+    <!--Fonts.googleapis-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+    </style>
+
+    <!--Axios-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!--Tailwindcss-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    playwrite: ["'Playwrite NG Modern'"],
+                },
+                extend: {
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-lime-600 text-center p-8 m-8 flex justify-center text-2xl">
+    <article>
+        <h1 class="text-white font-dancing">GATOS</h1>
+        <section id="contenedor"></section>
+        <button id="btn" class="font-playwrite bg-lime-900 text-white m-2.5 p-2.5
+        rounded-md hover:text-black hover:bg-white">
+            Siguientes Gatos
+        </button>
+    </article>
+
+    <script src="cat.js"></script>
+</body>
+
+</html>
